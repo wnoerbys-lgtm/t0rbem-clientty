@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "t0rbem_client",
+  "version": "${version}",
+  "name": "T0Rbem Client",
+  "description": "Schematic builder, area miner og udforsket-chunks-kort. Kun til singleplayer.",
+  "authors": ["T0Rbem"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dk.t0rbem.T0RbemClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}
