@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "t0rbem",
+  "id": "client67",
   "version": "${version}",
-  "name": "t0rbem client",
+  "name": "67client",
   "description": "Utility-klient med ClickGUI, flytbar HUD, indstillinger og gemt config.",
-  "authors": ["t0rbem"],
+  "authors": ["67client"],
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
-    "client": ["dk.t0rbem.T0rbemClient"]
+    "client": ["dk.client67.Client67"]
   },
   "depends": {
     "fabricloader": ">=0.16.0",
