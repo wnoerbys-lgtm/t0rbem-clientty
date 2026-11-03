@@ -1,0 +1,25 @@
+name: build
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: current   # nyeste Gradle, kræver ingen wrapper
+      - name: Vis build-opsætning
+        run: |
+          echo '--- build.gradle ---'; head -5 build.gradle
+          echo '--- gradle.properties ---'; cat gradle.properties
+          echo '--- settings.gradle ---'; cat settings.gradle
+      - run: gradle build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: 67client
+          path: build/libs/*.jar

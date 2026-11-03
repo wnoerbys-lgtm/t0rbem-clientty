@@ -22,6 +22,7 @@ ESP (3D/2D), Storage ESP, Hole ESP, Sus Chunks (chunk-grænser i verden), NoFall
 | H | Skjul/vis HUD |
 | C (hold) | Zoom |
 | G | Slå Flight til/fra |
+| Z | Anchor Macro (anchor + glowstone) |
 | F4 | Freecam (indbygget Freecam-mod) |
 
 Alle taster kan ændres under Indstillinger → Styring → "67client".
